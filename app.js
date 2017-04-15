@@ -29,4 +29,33 @@ app.get('/about', (req, res, next) => {
 });
 
 
+app.get('/counting', (req, res, next) => {
+  res.render('counting-view.ejs');
+});
+
+
+const citiesList = [
+  'Paris', 'Ho Chi Minh City', 'Madrid',
+  'Warsaw', 'Moscow', 'Toronto'
+];
+
+app.get('/cities', (req, res, next) => {
+  res.render(
+    'cities-view.ejs',
+    {
+      cities: citiesList,
+      name: 'Izzy Ironside',
+      age: 30
+    }
+  );
+});
+
+
+const foodsList = ['pizza', 'veal parmigiana', 'popcorn'];
+
+app.get('/foods', (req, res, next) => {
+  res.render('foods-view.ejs', { foods: foodsList });
+});
+
+
 app.listen(3000);

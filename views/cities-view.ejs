@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Express Views </title>
+
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1> Express Views </h1>
+
+    <h2>
+      Cities Traveled for
+      <%= name %>
+    </h2>
+
+    <p> <%= name %> is <%= age %> years old. </p>
+
+    <% if (age >= 21) { %>
+      <p> Which means they can have some whisky. </p>
+    <% } else { %>
+      <p> Which means they can have some root beer. </p>
+    <% } %>
+
+    <ul>
+      <% cities.forEach((oneCity) => { %>
+        <li>
+          <%= oneCity %>
+        </li>
+      <% }) %>
+    </ul>
+
+    <a href="/">
+      Back to Home
+    </a>
+  </body>
+</html>
