@@ -1,0 +1,23 @@
+{
+  "name": "express-views",
+  "version": "1.0.0",
+  "description": "PP | Web Colors App ===================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ironhack-miami-ptwd-jan-2017/express-views.git"
+  },
+  "author": "Nizar Khalife Iglesias <khalifenizar@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ironhack-miami-ptwd-jan-2017/express-views/issues"
+  },
+  "homepage": "https://github.com/ironhack-miami-ptwd-jan-2017/express-views#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  }
+}
