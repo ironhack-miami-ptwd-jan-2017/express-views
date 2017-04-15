@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> <%= pageTitle %> </title>
+
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1> Express Views </h1>
+
+      <nav>
+        <ul>
+          <li> <a href="/"> Home </a> </li>
+
+          <li> <a href="/about"> About Us </a> </li>
+
+          <li> <a href="/counting"> Count to 20 </a>
+
+          <li> <a href="/cities"> Cities Traveled </a>
+
+          <li> <a href="/foods"> Favorite Foods </a>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- body is a variable that contains the page being rendered -->
+    <!-- |     (handled by the layout package)-->
+    <%- body -%>
+
+    <footer>
+      Made with &hearts; at Ironhack.
+      Copyright © 2017 Blah.
+    </footer>
+  </body>
+</html>

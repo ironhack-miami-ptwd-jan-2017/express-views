@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ironhack-miami-ptwd-jan-2017/express-views#readme",
   "dependencies": {
     "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "express-ejs-layouts": "^2.3.0"
   }
 }

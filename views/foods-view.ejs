@@ -1,26 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title> Express Views </title>
+<h2> Favorite Foods </h2>
 
-    <link rel="stylesheet" href="/styles.css">
-  </head>
-  <body>
-    <h1> Express Views </h1>
+<ul>
+  <% foods.forEach((oneFood) => { %>
+    <li>
+      <%= oneFood %>
+    </li>
+  <% }) %>
+</ul>
 
-    <h2> Favorite Foods </h2>
-
-    <ul>
-      <% foods.forEach((oneFood) => { %>
-        <li>
-          <%= oneFood %>
-        </li>
-      <% }) %>
-    </ul>
-
-    <a href="/">
-      Back to Home
-    </a>
-  </body>
-</html>
+<a href="/"> Back to Home </a>

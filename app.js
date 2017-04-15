@@ -1,10 +1,20 @@
 const express = require('express');
+const expressLayouts = require('express-ejs-layouts');
 
 
 const app = express();
 
 
 app.use(express.static('public'));
+
+  // Use the express-ejs-layouts package (the variable expressLayouts)
+app.use(expressLayouts);
+
+
+  // change default layout file from views/layout.ejs
+  //      to views/layouts/main-layout.ejs
+  //                            |
+app.set('layout', 'layouts/main-layout.ejs');
 
 
   //              views/ folder
@@ -13,6 +23,12 @@ app.set('views', 'views');
 app.set('view engine', 'ejs');
   //                     |
   //        npm install ejs --save
+
+
+  // Declare a pageTitle variable for views
+  //   <%= pageTitle %>
+  //           |
+app.locals.pageTitle = 'Express Views';
 
 
 app.get('/', (req, res, next) => {
@@ -30,7 +46,9 @@ app.get('/about', (req, res, next) => {
 
 
 app.get('/counting', (req, res, next) => {
-  res.render('counting-view.ejs');
+  res.render('counting-view.ejs', {
+    title: 'Count to 20'
+  });
 });
 
 
