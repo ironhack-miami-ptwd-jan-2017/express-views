@@ -29,13 +29,20 @@ Create an Express app with:
 - EJS as a view engine
 - an EJS layout file that serves as the "template" for each page
 
+The layout should have:
+
+- a `<header>` tag
+- an `<h1>` inside the `<header>` with the title of your app
+- a `<nav>` tag where you will put your navigation links
+- a `<footer>` tag
+
 Then, create your first route: the home page.
 
 Your home page should have:
 
 - the Web address `/`
 - its own EJS file
-- an `<h1>` heading with the title of your app
+- an `<h2>` heading
 - a `<p>` with a description of the app
 
 
@@ -48,6 +55,7 @@ The list of colors page should have:
 
 - the Web address `/colors`
 - its own EJS file
+- an `<h2>` that says _Colors_
 - a `<ul>` tag
 - a loop that displays each color
 - styles that approximate the layout of [Gradients.io](http://gradients.io/)
@@ -59,13 +67,37 @@ Each color in the loop should have:
 - the hex code
 - a box that shows the actual color
 
-Make sure to add a link so that this page is reachable from the homepage.
+Make sure to add a link in your navigation so that the page is reachable.
 
 
 Iteration #3: Color Category Pages
 ----------------------------------
 
-Under construction...
+Choose 3 color categories and make a new route for each of them that will only display the list of colors of that category.
+
+Each color category page should have:
+
+- a Web address specific to that color category (e.g. `/pink` for pink colors or `/purple` for purples)
+- its own EJS file (e.g. `pink-colors-view.ejs` for pink colors or `purples-colors-view.ejs` for purples)
+- an `<h2>` with the name of the color category
+- a `<ul>` tag
+- a loop that displays each color of that category
+- same styles as the list of all colors
+
+Make sure to add links in your navigation so that the pages are reachable.
+
+
+(BONUS) Iteration #4: Random Color
+----------------------------------
+
+Make a new route that displays a random color, chosen at random from the array.
+
+The random color page should have:
+
+- the Web address `/random`
+- its own EJS file
+- an `<h2>` that says _Random Color_
+- styles similar to those in the list of colors page but bigger since you are only displaying one color
 
 
 Colors "Database"
