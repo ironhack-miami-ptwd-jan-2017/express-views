@@ -1,37 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
   <head>
     <meta charset="utf-8">
-    <title> <%= pageTitle %> </title>
-
-    <link rel="stylesheet" href="/styles.css">
+    <title></title>
+    <link rel = "stylesheet" href = "./styles.css">
+    <link rel = "stylesheet" href = "./bootstrap.min.css">
   </head>
+
+  <nav class=" row container-fluid">
+    <span><a href="/">Home</a></span>
+    <span><a href ="/about">About</a></span>
+    <span><a href ="/colors">Colors</a></span>
+    <span><a href ="/random">Random Color</a></span>
+  </nav>
+
   <body>
-    <header>
-      <h1> Express Views </h1>
-
-      <nav>
-        <ul>
-          <li> <a href="/"> Home </a> </li>
-
-          <li> <a href="/about"> About Us </a> </li>
-
-          <li> <a href="/counting"> Count to 20 </a>
-
-          <li> <a href="/cities"> Cities Traveled </a>
-
-          <li> <a href="/foods"> Favorite Foods </a>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- body is a variable that contains the page being rendered -->
-    <!-- |     (handled by the layout package)-->
+    <br>
+    <h1 id="h1">GRADIENTS</h1>
     <%- body -%>
-
     <footer>
       Made with &hearts; at Ironhack.
-      Copyright © 2017 Blah.
+      Copyright Dianelis & Sherwino ©2017
+      <a href = "/"> ...this is the way back home</a>
     </footer>
+
   </body>
 </html>

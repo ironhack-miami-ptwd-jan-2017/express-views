@@ -1,21 +1,21 @@
 {
-  "name": "express-views",
+  "name": "lab-express-views",
   "version": "1.0.0",
-  "description": "PP | Web Colors App ===================",
-  "main": "index.js",
+  "description": "Express View Colors",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ironhack-miami-ptwd-jan-2017/express-views.git"
+    "url": "git+https://github.com/sherwino/lab-express-views.git"
   },
-  "author": "Nizar Khalife Iglesias <khalifenizar@gmail.com>",
+  "author": "dianelis sherwin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ironhack-miami-ptwd-jan-2017/express-views/issues"
+    "url": "https://github.com/sherwino/lab-express-views/issues"
   },
-  "homepage": "https://github.com/ironhack-miami-ptwd-jan-2017/express-views#readme",
+  "homepage": "https://github.com/sherwino/lab-express-views#readme",
   "dependencies": {
     "ejs": "^2.5.6",
     "express": "^4.15.2",
